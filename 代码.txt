@@ -1,0 +1,14 @@
+public class Fibonacci {
+    public static long of(long number) {
+        if ((number == 0) || (number == 1))
+            return number;
+        else
+            return of(number - 1) + of(number - 2);
+        }
+        public static void main(String[] args) {
+            for (int counter = 0; num <= 200; num++){
+            System.out.printf("Fibonacci of %d is: %d\n",
+            num, Fibonacci.of(num));
+        }
+    }
+}
